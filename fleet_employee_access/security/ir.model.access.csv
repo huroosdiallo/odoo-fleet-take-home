@@ -1,0 +1,16 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_fleet_vehicle_own,fleet.vehicle own vehicles,fleet.model_fleet_vehicle,group_fleet_own_vehicles,1,1,1,0
+access_fleet_vehicle_model_own,fleet.vehicle.model own vehicles,fleet.model_fleet_vehicle_model,group_fleet_own_vehicles,1,0,0,0
+access_fleet_vehicle_model_brand_own,fleet.vehicle.model.brand own vehicles,fleet.model_fleet_vehicle_model_brand,group_fleet_own_vehicles,1,0,0,0
+access_fleet_vehicle_model_category_own,fleet.vehicle.model.category own vehicles,fleet.model_fleet_vehicle_model_category,group_fleet_own_vehicles,1,0,0,0
+access_fleet_vehicle_tag_own,fleet.vehicle.tag own vehicles,fleet.model_fleet_vehicle_tag,group_fleet_own_vehicles,1,0,0,0
+access_fleet_vehicle_state_own,fleet.vehicle.state own vehicles,fleet.model_fleet_vehicle_state,group_fleet_own_vehicles,1,0,0,0
+access_fleet_service_type_own,fleet.service.type own vehicles,fleet.model_fleet_service_type,group_fleet_own_vehicles,1,0,0,0
+access_fleet_vehicle_odometer_own,fleet.vehicle.odometer own vehicles,fleet.model_fleet_vehicle_odometer,group_fleet_own_vehicles,1,0,1,0
+access_fleet_vehicle_log_contract_own,fleet.vehicle.log.contract own vehicles,fleet.model_fleet_vehicle_log_contract,group_fleet_own_vehicles,1,0,0,0
+access_fleet_vehicle_log_services_own,fleet.vehicle.log.services own vehicles,fleet.model_fleet_vehicle_log_services,group_fleet_own_vehicles,1,0,0,0
+access_fleet_vehicle_assignation_log_own,fleet.vehicle.assignation.log own vehicles,fleet.model_fleet_vehicle_assignation_log,group_fleet_own_vehicles,1,0,1,0
+access_fleet_vehicle_color_own,fleet.vehicle.color own vehicles,model_fleet_vehicle_color,group_fleet_own_vehicles,1,0,0,0
+access_fleet_vehicle_color_officer,fleet.vehicle.color officer,model_fleet_vehicle_color,fleet.fleet_group_user,1,1,1,1
+access_fleet_vehicle_model_brand_officer,fleet.vehicle.model.brand officer,fleet.model_fleet_vehicle_model_brand,fleet.fleet_group_user,1,1,1,0
+access_fleet_vehicle_model_officer,fleet.vehicle.model officer,fleet.model_fleet_vehicle_model,fleet.fleet_group_user,1,1,1,0

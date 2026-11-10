@@ -1,0 +1,605 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* custom_fleet_vehicle
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-09 23:38+0000\n"
+"PO-Revision-Date: 2026-11-09 23:38+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.constraint,message:custom_fleet_vehicle.constraint_custom_fleet_vehicle_brand_name_unique
+msgid "A brand with this name already exists."
+msgstr "Esiste già una marca con questo nome."
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.constraint,message:custom_fleet_vehicle.constraint_custom_fleet_vehicle_color_name_unique
+msgid "A color with this name already exists."
+msgstr "Esiste già un colore con questo nome."
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.constraint,message:custom_fleet_vehicle.constraint_custom_fleet_vehicle_license_plate_unique
+msgid "A vehicle with this license plate already exists."
+msgstr "Esiste già un'auto con questa targa."
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__message_needaction
+msgid "Action Needed"
+msgstr "Azione richiesta"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__active
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__active
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_color__active
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__active
+msgid "Active"
+msgstr "Attiva"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_ids
+msgid "Activities"
+msgstr "Attività"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Decorazione eccezione attività"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_state
+msgid "Activity State"
+msgstr "Stato attività"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icona tipo attività"
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.actions.act_window,help:custom_fleet_vehicle.action_custom_fleet_vehicle_brand
+msgid "Add the first vehicle brand"
+msgstr "Aggiungi la prima marca"
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.actions.act_window,help:custom_fleet_vehicle.action_custom_fleet_vehicle_color
+msgid "Add the first vehicle color"
+msgstr "Aggiungi il primo colore"
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.actions.act_window,help:custom_fleet_vehicle.action_custom_fleet_vehicle_model
+msgid "Add the first vehicle model"
+msgstr "Aggiungi il primo modello"
+
+#. module: custom_fleet_vehicle
+#: model:ir.ui.menu,name:custom_fleet_vehicle.menu_custom_fleet_vehicles
+msgid "All Vehicles"
+msgstr "Tutte le auto"
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_brand_view_form
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_brand_view_search
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_color_view_search
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_model_view_form
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_model_view_search
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_form
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_search
+msgid "Archived"
+msgstr "Archiviata"
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_form
+msgid "Assignment"
+msgstr "Assegnazione"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__message_attachment_count
+msgid "Attachment Count"
+msgstr "Numero allegati"
+
+#. module: custom_fleet_vehicle
+#: model:res.groups,name:custom_fleet_vehicle.group_custom_fleet_user
+msgid "Base User"
+msgstr "Utente Base"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__brand_id
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__brand_id
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_brand_view_form
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_model_view_search
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_search
+msgid "Brand"
+msgstr "Marca"
+
+#. module: custom_fleet_vehicle
+#: model:ir.actions.act_window,name:custom_fleet_vehicle.action_custom_fleet_vehicle_brand
+#: model:ir.ui.menu,name:custom_fleet_vehicle.menu_custom_fleet_brands
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_brand_view_list
+msgid "Brands"
+msgstr "Marche"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_color__color
+msgid "Color Index"
+msgstr "Indice colore"
+
+#. module: custom_fleet_vehicle
+#: model:ir.actions.act_window,name:custom_fleet_vehicle.action_custom_fleet_vehicle_color
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__color_ids
+#: model:ir.ui.menu,name:custom_fleet_vehicle.menu_custom_fleet_colors
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_color_view_list
+msgid "Colors"
+msgstr "Colori"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__company_id
+msgid "Company"
+msgstr "Azienda"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model,name:custom_fleet_vehicle.model_custom_fleet_vehicle
+msgid "Company Vehicle"
+msgstr "Auto aziendale"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_hr_employee__custom_vehicle_ids
+#: model:ir.ui.menu,name:custom_fleet_vehicle.menu_custom_fleet_root
+msgid "Company Vehicles"
+msgstr "Parco Auto"
+
+#. module: custom_fleet_vehicle
+#: model:res.groups.privilege,name:custom_fleet_vehicle.res_groups_privilege_custom_fleet
+msgid "Company Vehicles (standalone)"
+msgstr "Parco Auto (autonomo)"
+
+#. module: custom_fleet_vehicle
+#: model:ir.ui.menu,name:custom_fleet_vehicle.menu_custom_fleet_config
+msgid "Configuration"
+msgstr "Configurazione"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__create_uid
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__create_uid
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_color__create_uid
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__create_date
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__create_date
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_color__create_date
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__display_name
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__display_name
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_color__display_name
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__display_name
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_hr_employee__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model,name:custom_fleet_vehicle.model_hr_employee
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__employee_id
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_search
+msgid "Employee"
+msgstr "Dipendente"
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.actions.act_window,help:custom_fleet_vehicle.action_custom_fleet_vehicle
+msgid ""
+"Enter license plate, brand and model and assign the vehicle to an employee."
+msgstr "Inserisci targa, marca e modello e assegna l'auto a un dipendente."
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.actions.act_window,help:custom_fleet_vehicle.action_custom_fleet_vehicle_model
+msgid "Every model belongs to a brand."
+msgstr "Ogni modello appartiene a una marca."
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__message_follower_ids
+msgid "Followers"
+msgstr "Follower"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Follower (partner)"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icona Font Awesome, es. fa-tasks"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__has_message
+msgid "Has Message"
+msgstr "Ha messaggi"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__id
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__id
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_color__id
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__id
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_hr_employee__id
+msgid "ID"
+msgstr "ID"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_exception_icon
+msgid "Icon"
+msgstr "Icona"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icona per indicare un'attività in eccezione."
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Se selezionato, i nuovi messaggi richiedono attenzione."
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__message_has_error
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Se selezionato, alcuni messaggi hanno un errore di consegna."
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__image_1920
+msgid "Image"
+msgstr "Immagine"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__image_1024
+msgid "Image 1024"
+msgstr "Immagine 1024"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__image_128
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__image_128
+msgid "Image 128"
+msgstr "Immagine 128"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__image_256
+msgid "Image 256"
+msgstr "Immagine 256"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__image_512
+msgid "Image 512"
+msgstr "Immagine 512"
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_form
+msgid "Internal notes..."
+msgstr "Note interne..."
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__message_is_follower
+msgid "Is Follower"
+msgstr "È follower"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__write_uid
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__write_uid
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_color__write_uid
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__write_date
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__write_date
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_color__write_date
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__license_plate
+msgid "License Plate"
+msgstr "Targa"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__image_128
+msgid "Logo"
+msgstr "Logo"
+
+#. module: custom_fleet_vehicle
+#: model:res.groups,name:custom_fleet_vehicle.group_custom_fleet_manager
+msgid "Manager"
+msgstr "Manager"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__message_has_error
+msgid "Message Delivery error"
+msgstr "Errore di consegna messaggio"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__message_ids
+msgid "Messages"
+msgstr "Messaggi"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__model_id
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_model_view_form
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_search
+msgid "Model"
+msgstr "Modello"
+
+#. module: custom_fleet_vehicle
+#: model:ir.actions.act_window,name:custom_fleet_vehicle.action_custom_fleet_vehicle_model
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__model_ids
+#: model:ir.ui.menu,name:custom_fleet_vehicle.menu_custom_fleet_models
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_model_view_list
+msgid "Models"
+msgstr "Modelli"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Scadenza mia attività"
+
+#. module: custom_fleet_vehicle
+#: model:ir.actions.act_window,name:custom_fleet_vehicle.action_custom_fleet_my_vehicles
+#: model:ir.ui.menu,name:custom_fleet_vehicle.menu_custom_fleet_my_vehicles
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_search
+msgid "My Vehicles"
+msgstr "Le mie auto"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__name
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__name
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_color__name
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Scadenza prossima attività"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_summary
+msgid "Next Activity Summary"
+msgstr "Riepilogo prossima attività"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_type_id
+msgid "Next Activity Type"
+msgstr "Tipo prossima attività"
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_search
+msgid "No Color"
+msgstr "Senza colore"
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.actions.act_window,help:custom_fleet_vehicle.action_custom_fleet_my_vehicles
+msgid "No vehicle assigned to you"
+msgstr "Nessuna auto assegnata a te"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__notes
+msgid "Notes"
+msgstr "Note"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Numero di azioni"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__model_count
+msgid "Number of Models"
+msgstr "Numero di modelli"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__message_has_error_counter
+msgid "Number of errors"
+msgstr "Numero di errori"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Numero di messaggi che richiedono un'azione"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Numero di messaggi con errore di consegna"
+
+#. module: custom_fleet_vehicle
+#. odoo-python
+#: code:addons/custom_fleet_vehicle/models/custom_fleet_vehicle.py:0
+msgid "Only a Fleet Manager can assign a vehicle to another employee."
+msgstr ""
+"Solo un Manager del parco auto può assegnare un'auto a un altro dipendente."
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.actions.act_window,help:custom_fleet_vehicle.action_custom_fleet_my_vehicles
+msgid "Register a new vehicle: it will be assigned to your employee."
+msgstr "Registra una nuova auto: verrà assegnata al tuo dipendente."
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.actions.act_window,help:custom_fleet_vehicle.action_custom_fleet_vehicle
+msgid "Register the first company vehicle"
+msgstr "Registra la prima auto del parco"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__year
+msgid "Registration Year"
+msgstr "Anno di immatricolazione"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_user_id
+msgid "Responsible User"
+msgstr "Utente responsabile"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Errore di consegna SMS"
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_brand_view_search
+msgid "Search Brands"
+msgstr "Cerca marche"
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_color_view_search
+msgid "Search Colors"
+msgstr "Cerca colori"
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_model_view_search
+msgid "Search Models"
+msgstr "Cerca modelli"
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_search
+msgid "Search Vehicles"
+msgstr "Cerca auto"
+
+#. module: custom_fleet_vehicle
+#: model:res.groups,comment:custom_fleet_vehicle.group_custom_fleet_user
+msgid ""
+"Sees and edits only the vehicles assigned to himself; can register new ones "
+"for himself. Cannot delete or reassign them."
+msgstr ""
+"Vede e modifica solo le auto assegnate a sé; può registrarne di nuove per "
+"sé. Non può cancellarle né riassegnarle."
+
+#. module: custom_fleet_vehicle
+#: model:res.groups,comment:custom_fleet_vehicle.group_custom_fleet_manager
+msgid "Sees and manages all the vehicles."
+msgstr "Vede e gestisce tutte le auto."
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Stato basato sulle attività\n"
+"In ritardo: la scadenza è già passata\n"
+"Oggi: l'attività scade oggi\n"
+"Pianificata: attività future."
+
+#. module: custom_fleet_vehicle
+#. odoo-python
+#: code:addons/custom_fleet_vehicle/models/custom_fleet_vehicle.py:0
+msgid ""
+"The license plate %(plate)s is not valid: use 2 to 12 letters, digits or "
+"dashes."
+msgstr "La targa %(plate)s non è valida: usa da 2 a 12 lettere, cifre o trattini."
+
+#. module: custom_fleet_vehicle
+#. odoo-python
+#: code:addons/custom_fleet_vehicle/models/custom_fleet_vehicle.py:0
+msgid "The model %(model)s is not a %(brand)s model."
+msgstr "Il modello %(model)s non è un modello %(brand)s."
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.constraint,message:custom_fleet_vehicle.constraint_custom_fleet_vehicle_model_brand_name_unique
+msgid "This brand already has a model with this name."
+msgstr "Questa marca ha già un modello con questo nome."
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipo dell'attività in eccezione sul record."
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_search
+msgid "Unassigned"
+msgstr "Non assegnate"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__user_id
+msgid "User"
+msgstr "Utente"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__user_id
+msgid "User of the assigned employee: decides who can see the vehicle."
+msgstr "Utente del dipendente assegnato: decide chi vede l'auto."
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_form
+msgid "Vehicle"
+msgstr "Auto"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model,name:custom_fleet_vehicle.model_custom_fleet_vehicle_brand
+msgid "Vehicle Brand"
+msgstr "Marca auto"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model,name:custom_fleet_vehicle.model_custom_fleet_vehicle_color
+msgid "Vehicle Color"
+msgstr "Colore auto"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_hr_employee__custom_vehicle_count
+msgid "Vehicle Count"
+msgstr "Numero di auto"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model,name:custom_fleet_vehicle.model_custom_fleet_vehicle_model
+msgid "Vehicle Model"
+msgstr "Modello auto"
+
+#. module: custom_fleet_vehicle
+#: model:ir.actions.act_window,name:custom_fleet_vehicle.action_custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_activity
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_form
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_graph
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_list
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_pivot
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.hr_employee_view_form_custom_fleet
+msgid "Vehicles"
+msgstr "Auto"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__website_message_ids
+msgid "Website Messages"
+msgstr "Messaggi sito web"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__website_message_ids
+msgid "Website communication history"
+msgstr "Cronologia comunicazioni sito web"
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_brand_view_form
+msgid "e.g. Fiat"
+msgstr "es. Fiat"
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_form
+msgid "e.g. GA123BB"
+msgstr "es. GA123BB"
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_model_view_form
+msgid "e.g. Panda"
+msgstr "es. Panda"

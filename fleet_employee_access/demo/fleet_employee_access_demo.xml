@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Password = login: demo databases only. -->
+    <record id="demo_user_base" model="res.users">
+        <field name="name">Luca Bianchi</field>
+        <field name="login">fleet_base</field>
+        <field name="password">fleet_base</field>
+        <field name="email">luca.bianchi@example.com</field>
+        <field name="group_ids" eval="[Command.set([ref('base.group_user'), ref('group_fleet_own_vehicles')])]"/>
+    </record>
+    <record id="demo_user_manager" model="res.users">
+        <field name="name">Giulia Verdi</field>
+        <field name="login">fleet_manager</field>
+        <field name="password">fleet_manager</field>
+        <field name="email">giulia.verdi@example.com</field>
+        <field name="group_ids" eval="[Command.set([ref('base.group_user'), ref('fleet.fleet_group_user')])]"/>
+    </record>
+
+    <record id="demo_employee_base" model="hr.employee">
+        <field name="name">Luca Bianchi</field>
+        <field name="user_id" ref="demo_user_base"/>
+    </record>
+    <record id="demo_employee_manager" model="hr.employee">
+        <field name="name">Giulia Verdi</field>
+        <field name="user_id" ref="demo_user_manager"/>
+    </record>
+
+    <record id="demo_model_panda" model="fleet.vehicle.model">
+        <field name="name">Panda</field>
+        <field name="brand_id" ref="fleet.brand_fiat"/>
+    </record>
+    <record id="demo_model_500" model="fleet.vehicle.model">
+        <field name="name">500</field>
+        <field name="brand_id" ref="fleet.brand_fiat"/>
+    </record>
+
+    <record id="demo_vehicle_base_1" model="fleet.vehicle">
+        <field name="model_id" ref="demo_model_panda"/>
+        <field name="license_plate">GA123BB</field>
+        <field name="driver_employee_id" ref="demo_employee_base"/>
+        <field name="color_ids" eval="[Command.set([ref('color_white')])]"/>
+    </record>
+    <record id="demo_vehicle_base_2" model="fleet.vehicle">
+        <field name="model_id" ref="demo_model_500"/>
+        <field name="license_plate">GA456BB</field>
+        <field name="driver_employee_id" ref="demo_employee_base"/>
+        <field name="color_ids" eval="[Command.set([ref('color_white'), ref('color_black')])]"/>
+    </record>
+    <record id="demo_vehicle_manager_1" model="fleet.vehicle">
+        <field name="model_id" ref="fleet.model_golf_8"/>
+        <field name="license_plate">GB789MM</field>
+        <field name="driver_employee_id" ref="demo_employee_manager"/>
+        <field name="color_ids" eval="[Command.set([ref('color_grey')])]"/>
+    </record>
+    <record id="demo_vehicle_unassigned" model="fleet.vehicle">
+        <field name="model_id" ref="fleet.model_corolla_ts"/>
+        <field name="license_plate">GC012CC</field>
+        <field name="color_ids" eval="[Command.set([ref('color_blue'), ref('color_silver')])]"/>
+    </record>
+</odoo>

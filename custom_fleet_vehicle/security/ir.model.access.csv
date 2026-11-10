@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_custom_fleet_vehicle_user,custom.fleet.vehicle base user,model_custom_fleet_vehicle,group_custom_fleet_user,1,1,1,0
+access_custom_fleet_vehicle_manager,custom.fleet.vehicle manager,model_custom_fleet_vehicle,group_custom_fleet_manager,1,1,1,1
+access_custom_fleet_vehicle_brand_user,custom.fleet.vehicle.brand base user,model_custom_fleet_vehicle_brand,group_custom_fleet_user,1,0,0,0
+access_custom_fleet_vehicle_brand_manager,custom.fleet.vehicle.brand manager,model_custom_fleet_vehicle_brand,group_custom_fleet_manager,1,1,1,1
+access_custom_fleet_vehicle_model_user,custom.fleet.vehicle.model base user,model_custom_fleet_vehicle_model,group_custom_fleet_user,1,0,0,0
+access_custom_fleet_vehicle_model_manager,custom.fleet.vehicle.model manager,model_custom_fleet_vehicle_model,group_custom_fleet_manager,1,1,1,1
+access_custom_fleet_vehicle_color_user,custom.fleet.vehicle.color base user,model_custom_fleet_vehicle_color,group_custom_fleet_user,1,0,0,0
+access_custom_fleet_vehicle_color_manager,custom.fleet.vehicle.color manager,model_custom_fleet_vehicle_color,group_custom_fleet_manager,1,1,1,1

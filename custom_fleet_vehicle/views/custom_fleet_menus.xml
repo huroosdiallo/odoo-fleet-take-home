@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_custom_fleet_root" name="Company Vehicles"
+              web_icon="custom_fleet_vehicle,static/description/icon.png"
+              groups="group_custom_fleet_user" sequence="45"/>
+    <menuitem id="menu_custom_fleet_my_vehicles" name="My Vehicles"
+              parent="menu_custom_fleet_root" action="action_custom_fleet_my_vehicles" sequence="10"/>
+    <menuitem id="menu_custom_fleet_vehicles" name="All Vehicles"
+              parent="menu_custom_fleet_root" action="action_custom_fleet_vehicle" sequence="20"
+              groups="group_custom_fleet_manager"/>
+
+    <menuitem id="menu_custom_fleet_config" name="Configuration"
+              parent="menu_custom_fleet_root" sequence="90"
+              groups="group_custom_fleet_manager"/>
+    <menuitem id="menu_custom_fleet_brands" name="Brands"
+              parent="menu_custom_fleet_config" action="action_custom_fleet_vehicle_brand" sequence="10"/>
+    <menuitem id="menu_custom_fleet_models" name="Models"
+              parent="menu_custom_fleet_config" action="action_custom_fleet_vehicle_model" sequence="20"/>
+    <menuitem id="menu_custom_fleet_colors" name="Colors"
+              parent="menu_custom_fleet_config" action="action_custom_fleet_vehicle_color" sequence="30"/>
+</odoo>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Fleet levels: Base User: Own Vehicles < Officer ("Manager" in Italian) < Administrator. -->
+    <record id="group_fleet_own_vehicles" model="res.groups">
+        <field name="name">Base User: Own Vehicles</field>
+        <field name="sequence">5</field>
+        <field name="privilege_id" ref="fleet.res_groups_privilege_fleet"/>
+        <field name="implied_ids" eval="[Command.link(ref('base.group_user'))]"/>
+        <field name="comment">Sees and registers only the vehicles assigned to his own employee. Cannot delete them or assign them to another employee.</field>
+    </record>
+
+    <record id="fleet.fleet_group_user" model="res.groups">
+        <field name="implied_ids" eval="[Command.link(ref('group_fleet_own_vehicles'))]"/>
+    </record>
+
+    <record id="fleet.menu_root" model="ir.ui.menu">
+        <field name="group_ids" eval="[Command.link(ref('group_fleet_own_vehicles'))]"/>
+    </record>
+    <record id="fleet.fleet_vehicles" model="ir.ui.menu">
+        <field name="group_ids" eval="[Command.link(ref('group_fleet_own_vehicles'))]"/>
+    </record>
+
+    <data noupdate="1">
+        <record id="rule_vehicle_own" model="ir.rule">
+            <field name="name">Fleet vehicle: Base User sees only his own vehicles</field>
+            <field name="model_id" ref="fleet.model_fleet_vehicle"/>
+            <field name="groups" eval="[Command.link(ref('group_fleet_own_vehicles'))]"/>
+            <field name="domain_force">[('driver_employee_id.user_id', '=', user.id)]</field>
+        </record>
+        <record id="rule_odometer_own" model="ir.rule">
+            <field name="name">Fleet odometer: Base User sees only his own vehicles</field>
+            <field name="model_id" ref="fleet.model_fleet_vehicle_odometer"/>
+            <field name="groups" eval="[Command.link(ref('group_fleet_own_vehicles'))]"/>
+            <field name="domain_force">[('vehicle_id.driver_employee_id.user_id', '=', user.id)]</field>
+        </record>
+        <record id="rule_contract_own" model="ir.rule">
+            <field name="name">Fleet contract: Base User sees only his own vehicles</field>
+            <field name="model_id" ref="fleet.model_fleet_vehicle_log_contract"/>
+            <field name="groups" eval="[Command.link(ref('group_fleet_own_vehicles'))]"/>
+            <field name="domain_force">[('vehicle_id.driver_employee_id.user_id', '=', user.id)]</field>
+        </record>
+        <record id="rule_services_own" model="ir.rule">
+            <field name="name">Fleet service: Base User sees only his own vehicles</field>
+            <field name="model_id" ref="fleet.model_fleet_vehicle_log_services"/>
+            <field name="groups" eval="[Command.link(ref('group_fleet_own_vehicles'))]"/>
+            <field name="domain_force">[('vehicle_id.driver_employee_id.user_id', '=', user.id)]</field>
+        </record>
+        <record id="rule_assignation_log_own" model="ir.rule">
+            <field name="name">Fleet assignment log: Base User sees only his own vehicles</field>
+            <field name="model_id" ref="fleet.model_fleet_vehicle_assignation_log"/>
+            <field name="groups" eval="[Command.link(ref('group_fleet_own_vehicles'))]"/>
+            <field name="domain_force">[('vehicle_id.driver_employee_id.user_id', '=', user.id)]</field>
+        </record>
+
+        <!-- Officer implies Base User: keep the standard "all records" for Officer. -->
+        <record id="rule_vehicle_officer_all" model="ir.rule">
+            <field name="name">Fleet vehicle: Officer sees all vehicles</field>
+            <field name="model_id" ref="fleet.model_fleet_vehicle"/>
+            <field name="groups" eval="[Command.link(ref('fleet.fleet_group_user'))]"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+        <record id="rule_odometer_officer_all" model="ir.rule">
+            <field name="name">Fleet odometer: Officer sees all vehicles</field>
+            <field name="model_id" ref="fleet.model_fleet_vehicle_odometer"/>
+            <field name="groups" eval="[Command.link(ref('fleet.fleet_group_user'))]"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+        <record id="rule_contract_officer_all" model="ir.rule">
+            <field name="name">Fleet contract: Officer sees all vehicles</field>
+            <field name="model_id" ref="fleet.model_fleet_vehicle_log_contract"/>
+            <field name="groups" eval="[Command.link(ref('fleet.fleet_group_user'))]"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+        <record id="rule_services_officer_all" model="ir.rule">
+            <field name="name">Fleet service: Officer sees all vehicles</field>
+            <field name="model_id" ref="fleet.model_fleet_vehicle_log_services"/>
+            <field name="groups" eval="[Command.link(ref('fleet.fleet_group_user'))]"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+        <record id="rule_assignation_log_officer_all" model="ir.rule">
+            <field name="name">Fleet assignment log: Officer sees all vehicles</field>
+            <field name="model_id" ref="fleet.model_fleet_vehicle_assignation_log"/>
+            <field name="groups" eval="[Command.link(ref('fleet.fleet_group_user'))]"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+    </data>
+</odoo>

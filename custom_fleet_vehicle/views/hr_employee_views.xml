@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_employee_view_form_custom_fleet" model="ir.ui.view">
+        <field name="name">hr.employee.form.custom.fleet</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_open_custom_vehicles" type="object" class="oe_stat_button"
+                        icon="fa-car" groups="custom_fleet_vehicle.group_custom_fleet_user">
+                    <field name="custom_vehicle_count" widget="statinfo" string="Vehicles"/>
+                </button>
+            </xpath>
+        </field>
+    </record>
+</odoo>

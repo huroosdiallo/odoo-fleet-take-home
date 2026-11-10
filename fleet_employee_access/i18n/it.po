@@ -1,0 +1,198 @@
+# Italian translation of fleet_employee_access.
+# This file contains the translation of the following modules:
+# 	* fleet_employee_access
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-09 23:51+0000\n"
+"PO-Revision-Date: 2026-11-09 23:42+0000\n"
+"Last-Translator: Mahmood Diallo <stromud@gmail.com>\n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: fleet_employee_access
+#: model:ir.model.fields,field_description:fleet_employee_access.field_fleet_vehicle_color__active
+msgid "Active"
+msgstr "Attivo"
+
+#. module: fleet_employee_access
+#: model_terms:ir.ui.view,arch_db:fleet_employee_access.fleet_vehicle_color_view_search
+msgid "Archived"
+msgstr "In archivio"
+
+#. module: fleet_employee_access
+#: model:res.groups,name:fleet_employee_access.group_fleet_own_vehicles
+msgid "Base User: Own Vehicles"
+msgstr "Utente Base: solo i propri veicoli"
+
+#. module: fleet_employee_access
+#: model:fleet.vehicle.color,name:fleet_employee_access.color_black
+msgid "Black"
+msgstr "Nero"
+
+#. module: fleet_employee_access
+#: model:fleet.vehicle.color,name:fleet_employee_access.color_blue
+msgid "Blue"
+msgstr "Blu"
+
+#. module: fleet_employee_access
+#: model_terms:ir.ui.view,arch_db:fleet_employee_access.fleet_vehicle_view_search
+msgid "Color"
+msgstr "Colore"
+
+#. module: fleet_employee_access
+#: model:ir.actions.act_window,name:fleet_employee_access.fleet_vehicle_color_action
+#: model:ir.model.fields,field_description:fleet_employee_access.field_fleet_vehicle__color_ids
+#: model:ir.ui.menu,name:fleet_employee_access.fleet_vehicle_color_menu
+#: model_terms:ir.ui.view,arch_db:fleet_employee_access.fleet_vehicle_color_view_list
+#: model_terms:ir.ui.view,arch_db:fleet_employee_access.fleet_vehicle_color_view_search
+msgid "Colors"
+msgstr "Colori"
+
+#. module: fleet_employee_access
+#: model_terms:ir.actions.act_window,help:fleet_employee_access.fleet_vehicle_color_action
+msgid "Colors are selected on the vehicle as tags: a vehicle can have more than one."
+msgstr "I colori si scelgono sul veicolo come etichette: un veicolo può averne più di uno."
+
+#. module: fleet_employee_access
+#: model_terms:ir.actions.act_window,help:fleet_employee_access.fleet_vehicle_color_action
+msgid "Create a new vehicle color"
+msgstr "Crea un nuovo colore per i veicoli"
+
+#. module: fleet_employee_access
+#: model:ir.model.fields,field_description:fleet_employee_access.field_fleet_vehicle_color__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: fleet_employee_access
+#: model:ir.model.fields,field_description:fleet_employee_access.field_fleet_vehicle_color__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: fleet_employee_access
+#: model:ir.model.fields,field_description:fleet_employee_access.field_fleet_vehicle__display_name
+#: model:ir.model.fields,field_description:fleet_employee_access.field_fleet_vehicle_color__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: fleet_employee_access
+#: model:ir.model.fields,field_description:fleet_employee_access.field_fleet_vehicle__driver_employee_id
+msgid "Driver (Employee)"
+msgstr "Conducente (dipendente)"
+
+#. module: fleet_employee_access
+#: model_terms:ir.ui.view,arch_db:fleet_employee_access.fleet_vehicle_view_form
+#: model_terms:ir.ui.view,arch_db:fleet_employee_access.fleet_vehicle_view_list
+#: model_terms:ir.ui.view,arch_db:fleet_employee_access.fleet_vehicle_view_search
+msgid "Employee"
+msgstr "Dipendente"
+
+#. module: fleet_employee_access
+#: model:fleet.vehicle.color,name:fleet_employee_access.color_green
+msgid "Green"
+msgstr "Verde"
+
+#. module: fleet_employee_access
+#: model:fleet.vehicle.color,name:fleet_employee_access.color_grey
+msgid "Grey"
+msgstr "Grigio"
+
+#. module: fleet_employee_access
+#: model:ir.model.fields,field_description:fleet_employee_access.field_fleet_vehicle__id
+#: model:ir.model.fields,field_description:fleet_employee_access.field_fleet_vehicle_color__id
+msgid "ID"
+msgstr "ID"
+
+#. module: fleet_employee_access
+#: model:ir.model.fields,field_description:fleet_employee_access.field_fleet_vehicle_color__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: fleet_employee_access
+#: model:ir.model.fields,field_description:fleet_employee_access.field_fleet_vehicle_color__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: fleet_employee_access
+#: model:ir.actions.act_window,name:fleet_employee_access.fleet_vehicle_my_action
+#: model:ir.ui.menu,name:fleet_employee_access.fleet_vehicle_my_menu
+#: model_terms:ir.ui.view,arch_db:fleet_employee_access.fleet_vehicle_view_search
+msgid "My Vehicles"
+msgstr "Le mie auto"
+
+#. module: fleet_employee_access
+#: model:ir.model.fields,field_description:fleet_employee_access.field_fleet_vehicle_color__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: fleet_employee_access
+#. odoo-python
+#: code:addons/fleet_employee_access/models/fleet_vehicle.py:0
+msgid "Only a Fleet Officer or Administrator can assign a vehicle to another employee."
+msgstr "Solo un Manager o un Amministratore del parco veicoli può assegnare un veicolo a un altro dipendente."
+
+#. module: fleet_employee_access
+#: model:fleet.vehicle.color,name:fleet_employee_access.color_red
+msgid "Red"
+msgstr "Rosso"
+
+#. module: fleet_employee_access
+#: model_terms:ir.actions.act_window,help:fleet_employee_access.fleet_vehicle_my_action
+msgid "Register your first vehicle"
+msgstr "Registra la tua prima auto"
+
+#. module: fleet_employee_access
+#: model:res.groups,comment:fleet_employee_access.group_fleet_own_vehicles
+msgid "Sees and registers only the vehicles assigned to his own employee. Cannot delete them or assign them to another employee."
+msgstr "Vede e registra solo i veicoli assegnati al proprio dipendente. Non può eliminarli né assegnarli a un altro dipendente."
+
+#. module: fleet_employee_access
+#: model:ir.model.fields,field_description:fleet_employee_access.field_fleet_vehicle_color__sequence
+msgid "Sequence"
+msgstr "Sequenza"
+
+#. module: fleet_employee_access
+#: model:fleet.vehicle.color,name:fleet_employee_access.color_silver
+msgid "Silver"
+msgstr "Argento"
+
+#. module: fleet_employee_access
+#: model:ir.model.fields,field_description:fleet_employee_access.field_fleet_vehicle_color__color
+msgid "Tag Color"
+msgstr "Colore etichetta"
+
+#. module: fleet_employee_access
+#: model_terms:ir.actions.act_window,help:fleet_employee_access.fleet_vehicle_my_action
+msgid "The vehicles assigned to your employee are listed here."
+msgstr "Qui trovi i veicoli assegnati al tuo dipendente."
+
+#. module: fleet_employee_access
+#: model:ir.model,name:fleet_employee_access.model_fleet_vehicle
+msgid "Vehicle"
+msgstr "Veicolo"
+
+#. module: fleet_employee_access
+#: model:ir.model,name:fleet_employee_access.model_fleet_vehicle_color
+msgid "Vehicle Color"
+msgstr "Colore veicolo"
+
+#. module: fleet_employee_access
+#: model:fleet.vehicle.color,name:fleet_employee_access.color_white
+msgid "White"
+msgstr "Bianco"
+
+#. module: fleet_employee_access
+#: model:fleet.vehicle.color,name:fleet_employee_access.color_yellow
+msgid "Yellow"
+msgstr "Giallo"
+
+#. module: fleet_employee_access
+#: model_terms:ir.ui.view,arch_db:fleet_employee_access.fleet_vehicle_view_form
+msgid "e.g. Model S"
+msgstr "es. Model S"

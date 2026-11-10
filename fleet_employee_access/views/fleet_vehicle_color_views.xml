@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="fleet_vehicle_color_view_list" model="ir.ui.view">
+        <field name="name">fleet.vehicle.color.list</field>
+        <field name="model">fleet.vehicle.color</field>
+        <field name="arch" type="xml">
+            <list string="Colors" editable="bottom">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="color" widget="color_picker"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="fleet_vehicle_color_view_search" model="ir.ui.view">
+        <field name="name">fleet.vehicle.color.search</field>
+        <field name="model">fleet.vehicle.color</field>
+        <field name="arch" type="xml">
+            <search string="Colors">
+                <field name="name"/>
+                <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="fleet_vehicle_color_action" model="ir.actions.act_window">
+        <field name="name">Colors</field>
+        <field name="res_model">fleet.vehicle.color</field>
+        <field name="view_mode">list</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create a new vehicle color</p>
+            <p>Colors are selected on the vehicle as tags: a vehicle can have more than one.</p>
+        </field>
+    </record>
+
+    <menuitem id="fleet_vehicle_color_menu" name="Colors"
+              parent="fleet.fleet_models_configuration" action="fleet_vehicle_color_action"
+              sequence="20" groups="fleet.fleet_group_manager"/>
+</odoo>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="custom_fleet_vehicle_view_list" model="ir.ui.view">
+        <field name="name">custom.fleet.vehicle.list</field>
+        <field name="model">custom.fleet.vehicle</field>
+        <field name="arch" type="xml">
+            <list string="Vehicles">
+                <field name="image_128" widget="image" options="{'size': [0, 32]}" optional="show"/>
+                <field name="license_plate"/>
+                <field name="brand_id"/>
+                <field name="model_id"/>
+                <field name="year" optional="hide" options="{'format': false}"/>
+                <field name="color_ids" widget="many2many_tags" options="{'color_field': 'color'}" optional="show"/>
+                <field name="employee_id" widget="many2one_avatar_employee"/>
+                <field name="company_id" groups="base.group_multi_company" optional="show"/>
+                <field name="activity_ids" widget="list_activity" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="custom_fleet_vehicle_view_form" model="ir.ui.view">
+        <field name="name">custom.fleet.vehicle.form</field>
+        <field name="model">custom.fleet.vehicle</field>
+        <field name="arch" type="xml">
+            <form string="Vehicles">
+                <sheet>
+                    <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
+                    <field name="image_128" widget="image" class="oe_avatar" invisible="not image_128"/>
+                    <div class="oe_title">
+                        <label for="license_plate"/>
+                        <h1><field name="license_plate" placeholder="e.g. GA123BB"/></h1>
+                    </div>
+                    <group>
+                        <group string="Vehicle">
+                            <!-- Fields split by group: only Managers may create catalog entries on the fly. -->
+                            <field name="brand_id" groups="custom_fleet_vehicle.group_custom_fleet_manager"/>
+                            <field name="brand_id" groups="!custom_fleet_vehicle.group_custom_fleet_manager" options="{'no_create': True, 'no_open': True}"/>
+                            <field name="model_id" groups="custom_fleet_vehicle.group_custom_fleet_manager" context="{'default_brand_id': brand_id}"/>
+                            <field name="model_id" groups="!custom_fleet_vehicle.group_custom_fleet_manager" options="{'no_create': True, 'no_open': True}"/>
+                            <field name="year" options="{'format': false}"/>
+                            <field name="color_ids" groups="custom_fleet_vehicle.group_custom_fleet_manager" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                            <field name="color_ids" groups="!custom_fleet_vehicle.group_custom_fleet_manager" widget="many2many_tags" options="{'color_field': 'color', 'no_create': True, 'no_edit_color': True}"/>
+                        </group>
+                        <group string="Assignment">
+                            <field name="employee_id" widget="many2one_avatar_employee" options="{'no_create': True}"/>
+                            <field name="user_id" widget="many2one_avatar_user" invisible="not user_id"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="active" invisible="1"/>
+                        </group>
+                    </group>
+                    <field name="notes" placeholder="Internal notes..."/>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="custom_fleet_vehicle_view_kanban" model="ir.ui.view">
+        <field name="name">custom.fleet.vehicle.kanban</field>
+        <field name="model">custom.fleet.vehicle</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="employee_id" group_create="false" group_delete="false" group_edit="false" sample="1">
+                <templates>
+                    <t t-name="card" class="flex-row">
+                        <aside class="d-flex align-items-center me-2">
+                            <field name="image_128" widget="image" options="{'img_class': 'object-fit-contain'}"/>
+                        </aside>
+                        <main>
+                            <div class="d-flex justify-content-between">
+                                <field class="fw-bolder fs-5" name="license_plate"/>
+                                <field name="year" options="{'format': false}" class="text-muted" t-if="record.year.raw_value"/>
+                            </div>
+                            <div>
+                                <field name="brand_id"/> <field name="model_id"/>
+                            </div>
+                            <field name="color_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                            <footer class="pt-1">
+                                <field name="activity_ids" widget="kanban_activity"/>
+                                <field name="employee_id" widget="many2one_avatar_employee" class="ms-auto"/>
+                            </footer>
+                        </main>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="custom_fleet_vehicle_view_pivot" model="ir.ui.view">
+        <field name="name">custom.fleet.vehicle.pivot</field>
+        <field name="model">custom.fleet.vehicle</field>
+        <field name="arch" type="xml">
+            <pivot string="Vehicles" sample="1">
+                <field name="brand_id" type="row"/>
+                <field name="employee_id" type="col"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="custom_fleet_vehicle_view_graph" model="ir.ui.view">
+        <field name="name">custom.fleet.vehicle.graph</field>
+        <field name="model">custom.fleet.vehicle</field>
+        <field name="arch" type="xml">
+            <graph string="Vehicles" type="bar" sample="1">
+                <field name="brand_id"/>
+                <field name="model_id"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="custom_fleet_vehicle_view_activity" model="ir.ui.view">
+        <field name="name">custom.fleet.vehicle.activity</field>
+        <field name="model">custom.fleet.vehicle</field>
+        <field name="arch" type="xml">
+            <activity string="Vehicles">
+                <field name="id"/>
+                <templates>
+                    <div t-name="activity-box">
+                        <img class="rounded-circle" t-att-src="activity_image('custom.fleet.vehicle', 'image_128', record.id.raw_value)" role="img" t-att-title="record.id.value" t-att-alt="record.id.value"/>
+                        <div class="ms-2">
+                            <field name="license_plate" display="full" class="o_text_block"/>
+                            <field name="model_id" muted="1" class="o_text_block"/>
+                        </div>
+                    </div>
+                </templates>
+            </activity>
+        </field>
+    </record>
+
+    <record id="custom_fleet_vehicle_view_search" model="ir.ui.view">
+        <field name="name">custom.fleet.vehicle.search</field>
+        <field name="model">custom.fleet.vehicle</field>
+        <field name="arch" type="xml">
+            <search string="Search Vehicles">
+                <field name="license_plate"/>
+                <field name="brand_id"/>
+                <field name="model_id"/>
+                <field name="color_ids"/>
+                <field name="employee_id"/>
+                <filter string="My Vehicles" name="my_vehicles" domain="[('user_id', '=', uid)]"/>
+                <filter string="Unassigned" name="unassigned" domain="[('employee_id', '=', False)]"/>
+                <filter string="No Color" name="no_color" domain="[('color_ids', '=', False)]"/>
+                <separator/>
+                <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+                <group>
+                    <filter string="Brand" name="groupby_brand" context="{'group_by': 'brand_id'}"/>
+                    <filter string="Model" name="groupby_model" context="{'group_by': 'model_id'}"/>
+                    <filter string="Employee" name="groupby_employee" context="{'group_by': 'employee_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_custom_fleet_vehicle" model="ir.actions.act_window">
+        <field name="name">Vehicles</field>
+        <field name="res_model">custom.fleet.vehicle</field>
+        <field name="view_mode">list,kanban,form,pivot,graph,activity</field>
+        <field name="search_view_id" ref="custom_fleet_vehicle_view_search"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Register the first company vehicle</p>
+            <p>Enter license plate, brand and model and assign the vehicle to an employee.</p>
+        </field>
+    </record>
+
+    <record id="action_custom_fleet_my_vehicles" model="ir.actions.act_window">
+        <field name="name">My Vehicles</field>
+        <field name="res_model">custom.fleet.vehicle</field>
+        <field name="view_mode">list,kanban,form,pivot,graph,activity</field>
+        <field name="search_view_id" ref="custom_fleet_vehicle_view_search"/>
+        <field name="context">{'search_default_my_vehicles': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">No vehicle assigned to you</p>
+            <p>Register a new vehicle: it will be assigned to your employee.</p>
+        </field>
+    </record>
+</odoo>

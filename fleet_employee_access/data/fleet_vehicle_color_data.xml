@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="color_white" model="fleet.vehicle.color">
+        <field name="name">White</field>
+        <field name="sequence">1</field>
+        <field name="color">0</field>
+    </record>
+    <record id="color_black" model="fleet.vehicle.color">
+        <field name="name">Black</field>
+        <field name="sequence">2</field>
+        <field name="color">8</field>
+    </record>
+    <record id="color_silver" model="fleet.vehicle.color">
+        <field name="name">Silver</field>
+        <field name="sequence">3</field>
+        <field name="color">7</field>
+    </record>
+    <record id="color_grey" model="fleet.vehicle.color">
+        <field name="name">Grey</field>
+        <field name="sequence">4</field>
+        <field name="color">11</field>
+    </record>
+    <record id="color_blue" model="fleet.vehicle.color">
+        <field name="name">Blue</field>
+        <field name="sequence">5</field>
+        <field name="color">4</field>
+    </record>
+    <record id="color_red" model="fleet.vehicle.color">
+        <field name="name">Red</field>
+        <field name="sequence">6</field>
+        <field name="color">1</field>
+    </record>
+    <record id="color_green" model="fleet.vehicle.color">
+        <field name="name">Green</field>
+        <field name="sequence">7</field>
+        <field name="color">10</field>
+    </record>
+    <record id="color_yellow" model="fleet.vehicle.color">
+        <field name="name">Yellow</field>
+        <field name="sequence">8</field>
+        <field name="color">3</field>
+    </record>
+</odoo>

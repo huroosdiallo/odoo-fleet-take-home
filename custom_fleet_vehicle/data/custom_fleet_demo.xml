@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Password = login: demo databases only. -->
+    <record id="demo_user_base" model="res.users">
+        <field name="name">Carla Base</field>
+        <field name="login">auto_base</field>
+        <field name="password">auto_base</field>
+        <field name="email">carla.base@example.com</field>
+        <field name="group_ids" eval="[Command.set([ref('base.group_user'), ref('group_custom_fleet_user')])]"/>
+    </record>
+    <record id="demo_user_manager" model="res.users">
+        <field name="name">Davide Manager</field>
+        <field name="login">auto_manager</field>
+        <field name="password">auto_manager</field>
+        <field name="email">davide.manager@example.com</field>
+        <field name="group_ids" eval="[Command.set([ref('base.group_user'), ref('group_custom_fleet_manager')])]"/>
+    </record>
+
+    <record id="demo_employee_base" model="hr.employee">
+        <field name="name">Carla Base</field>
+        <field name="user_id" ref="demo_user_base"/>
+    </record>
+    <record id="demo_employee_manager" model="hr.employee">
+        <field name="name">Davide Manager</field>
+        <field name="user_id" ref="demo_user_manager"/>
+    </record>
+
+    <record id="demo_brand_fiat" model="custom.fleet.vehicle.brand">
+        <field name="name">Fiat</field>
+    </record>
+    <record id="demo_model_fiat_500" model="custom.fleet.vehicle.model">
+        <field name="name">500</field>
+        <field name="brand_id" ref="demo_brand_fiat"/>
+    </record>
+    <record id="demo_model_fiat_panda" model="custom.fleet.vehicle.model">
+        <field name="name">Panda</field>
+        <field name="brand_id" ref="demo_brand_fiat"/>
+    </record>
+    <record id="demo_model_fiat_tipo" model="custom.fleet.vehicle.model">
+        <field name="name">Tipo</field>
+        <field name="brand_id" ref="demo_brand_fiat"/>
+    </record>
+    <record id="demo_brand_renault" model="custom.fleet.vehicle.brand">
+        <field name="name">Renault</field>
+    </record>
+    <record id="demo_model_renault_clio" model="custom.fleet.vehicle.model">
+        <field name="name">Clio</field>
+        <field name="brand_id" ref="demo_brand_renault"/>
+    </record>
+    <record id="demo_model_renault_captur" model="custom.fleet.vehicle.model">
+        <field name="name">Captur</field>
+        <field name="brand_id" ref="demo_brand_renault"/>
+    </record>
+    <record id="demo_brand_toyota" model="custom.fleet.vehicle.brand">
+        <field name="name">Toyota</field>
+    </record>
+    <record id="demo_model_toyota_yaris" model="custom.fleet.vehicle.model">
+        <field name="name">Yaris</field>
+        <field name="brand_id" ref="demo_brand_toyota"/>
+    </record>
+    <record id="demo_model_toyota_corolla" model="custom.fleet.vehicle.model">
+        <field name="name">Corolla</field>
+        <field name="brand_id" ref="demo_brand_toyota"/>
+    </record>
+    <record id="demo_brand_volkswagen" model="custom.fleet.vehicle.brand">
+        <field name="name">Volkswagen</field>
+    </record>
+    <record id="demo_model_volkswagen_golf" model="custom.fleet.vehicle.model">
+        <field name="name">Golf</field>
+        <field name="brand_id" ref="demo_brand_volkswagen"/>
+    </record>
+    <record id="demo_model_volkswagen_polo" model="custom.fleet.vehicle.model">
+        <field name="name">Polo</field>
+        <field name="brand_id" ref="demo_brand_volkswagen"/>
+    </record>
+    <record id="demo_color_white" model="custom.fleet.vehicle.color">
+        <field name="name">Bianco</field>
+        <field name="color">0</field>
+    </record>
+    <record id="demo_color_black" model="custom.fleet.vehicle.color">
+        <field name="name">Nero</field>
+        <field name="color">11</field>
+    </record>
+    <record id="demo_color_grey" model="custom.fleet.vehicle.color">
+        <field name="name">Grigio</field>
+        <field name="color">8</field>
+    </record>
+    <record id="demo_color_silver" model="custom.fleet.vehicle.color">
+        <field name="name">Argento</field>
+        <field name="color">7</field>
+    </record>
+    <record id="demo_color_red" model="custom.fleet.vehicle.color">
+        <field name="name">Rosso</field>
+        <field name="color">1</field>
+    </record>
+    <record id="demo_color_blue" model="custom.fleet.vehicle.color">
+        <field name="name">Blu</field>
+        <field name="color">4</field>
+    </record>
+
+    <record id="demo_vehicle_base_1" model="custom.fleet.vehicle">
+        <field name="license_plate">FA111CC</field>
+        <field name="brand_id" ref="demo_brand_fiat"/>
+        <field name="model_id" ref="demo_model_fiat_500"/>
+        <field name="color_ids" eval="[Command.set([ref('demo_color_white'), ref('demo_color_black')])]"/>
+        <field name="year">2022</field>
+        <field name="employee_id" ref="demo_employee_base"/>
+    </record>
+    <record id="demo_vehicle_base_2" model="custom.fleet.vehicle">
+        <field name="license_plate">FA222CC</field>
+        <field name="brand_id" ref="demo_brand_renault"/>
+        <field name="model_id" ref="demo_model_renault_clio"/>
+        <field name="color_ids" eval="[Command.set([ref('demo_color_red')])]"/>
+        <field name="year">2021</field>
+        <field name="employee_id" ref="demo_employee_base"/>
+    </record>
+    <record id="demo_vehicle_manager_1" model="custom.fleet.vehicle">
+        <field name="license_plate">FB333DD</field>
+        <field name="brand_id" ref="demo_brand_volkswagen"/>
+        <field name="model_id" ref="demo_model_volkswagen_golf"/>
+        <field name="color_ids" eval="[Command.set([ref('demo_color_grey')])]"/>
+        <field name="year">2023</field>
+        <field name="employee_id" ref="demo_employee_manager"/>
+    </record>
+    <record id="demo_vehicle_free" model="custom.fleet.vehicle">
+        <field name="license_plate">FB444DD</field>
+        <field name="brand_id" ref="demo_brand_toyota"/>
+        <field name="model_id" ref="demo_model_toyota_yaris"/>
+        <field name="color_ids" eval="[Command.set([ref('demo_color_blue'), ref('demo_color_silver')])]"/>
+        <field name="year">2020</field>
+    </record>
+</odoo>

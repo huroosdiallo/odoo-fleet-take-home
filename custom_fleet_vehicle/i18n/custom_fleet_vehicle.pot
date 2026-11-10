@@ -1,0 +1,597 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* custom_fleet_vehicle
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-09 23:38+0000\n"
+"PO-Revision-Date: 2026-11-09 23:38+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.constraint,message:custom_fleet_vehicle.constraint_custom_fleet_vehicle_brand_name_unique
+msgid "A brand with this name already exists."
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.constraint,message:custom_fleet_vehicle.constraint_custom_fleet_vehicle_color_name_unique
+msgid "A color with this name already exists."
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.constraint,message:custom_fleet_vehicle.constraint_custom_fleet_vehicle_license_plate_unique
+msgid "A vehicle with this license plate already exists."
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__active
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__active
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_color__active
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__active
+msgid "Active"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.actions.act_window,help:custom_fleet_vehicle.action_custom_fleet_vehicle_brand
+msgid "Add the first vehicle brand"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.actions.act_window,help:custom_fleet_vehicle.action_custom_fleet_vehicle_color
+msgid "Add the first vehicle color"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.actions.act_window,help:custom_fleet_vehicle.action_custom_fleet_vehicle_model
+msgid "Add the first vehicle model"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.ui.menu,name:custom_fleet_vehicle.menu_custom_fleet_vehicles
+msgid "All Vehicles"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_brand_view_form
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_brand_view_search
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_color_view_search
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_model_view_form
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_model_view_search
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_form
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_search
+msgid "Archived"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_form
+msgid "Assignment"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:res.groups,name:custom_fleet_vehicle.group_custom_fleet_user
+msgid "Base User"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__brand_id
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__brand_id
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_brand_view_form
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_model_view_search
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_search
+msgid "Brand"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.actions.act_window,name:custom_fleet_vehicle.action_custom_fleet_vehicle_brand
+#: model:ir.ui.menu,name:custom_fleet_vehicle.menu_custom_fleet_brands
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_brand_view_list
+msgid "Brands"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_color__color
+msgid "Color Index"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.actions.act_window,name:custom_fleet_vehicle.action_custom_fleet_vehicle_color
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__color_ids
+#: model:ir.ui.menu,name:custom_fleet_vehicle.menu_custom_fleet_colors
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_color_view_list
+msgid "Colors"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__company_id
+msgid "Company"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model,name:custom_fleet_vehicle.model_custom_fleet_vehicle
+msgid "Company Vehicle"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_hr_employee__custom_vehicle_ids
+#: model:ir.ui.menu,name:custom_fleet_vehicle.menu_custom_fleet_root
+msgid "Company Vehicles"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:res.groups.privilege,name:custom_fleet_vehicle.res_groups_privilege_custom_fleet
+msgid "Company Vehicles (standalone)"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.ui.menu,name:custom_fleet_vehicle.menu_custom_fleet_config
+msgid "Configuration"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__create_uid
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__create_uid
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_color__create_uid
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__create_date
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__create_date
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_color__create_date
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__display_name
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__display_name
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_color__display_name
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__display_name
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_hr_employee__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model,name:custom_fleet_vehicle.model_hr_employee
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__employee_id
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_search
+msgid "Employee"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.actions.act_window,help:custom_fleet_vehicle.action_custom_fleet_vehicle
+msgid ""
+"Enter license plate, brand and model and assign the vehicle to an employee."
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.actions.act_window,help:custom_fleet_vehicle.action_custom_fleet_vehicle_model
+msgid "Every model belongs to a brand."
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__id
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__id
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_color__id
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__id
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_hr_employee__id
+msgid "ID"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__message_has_error
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__image_1920
+msgid "Image"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__image_1024
+msgid "Image 1024"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__image_128
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__image_128
+msgid "Image 128"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__image_256
+msgid "Image 256"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__image_512
+msgid "Image 512"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_form
+msgid "Internal notes..."
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__write_uid
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__write_uid
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_color__write_uid
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__write_date
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__write_date
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_color__write_date
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__license_plate
+msgid "License Plate"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__image_128
+msgid "Logo"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:res.groups,name:custom_fleet_vehicle.group_custom_fleet_manager
+msgid "Manager"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__model_id
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_model_view_form
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_search
+msgid "Model"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.actions.act_window,name:custom_fleet_vehicle.action_custom_fleet_vehicle_model
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__model_ids
+#: model:ir.ui.menu,name:custom_fleet_vehicle.menu_custom_fleet_models
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_model_view_list
+msgid "Models"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.actions.act_window,name:custom_fleet_vehicle.action_custom_fleet_my_vehicles
+#: model:ir.ui.menu,name:custom_fleet_vehicle.menu_custom_fleet_my_vehicles
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_search
+msgid "My Vehicles"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__name
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__name
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_color__name
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_model__name
+msgid "Name"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_search
+msgid "No Color"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.actions.act_window,help:custom_fleet_vehicle.action_custom_fleet_my_vehicles
+msgid "No vehicle assigned to you"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__notes
+msgid "Notes"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle_brand__model_count
+msgid "Number of Models"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#. odoo-python
+#: code:addons/custom_fleet_vehicle/models/custom_fleet_vehicle.py:0
+msgid "Only a Fleet Manager can assign a vehicle to another employee."
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.actions.act_window,help:custom_fleet_vehicle.action_custom_fleet_my_vehicles
+msgid "Register a new vehicle: it will be assigned to your employee."
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.actions.act_window,help:custom_fleet_vehicle.action_custom_fleet_vehicle
+msgid "Register the first company vehicle"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__year
+msgid "Registration Year"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_brand_view_search
+msgid "Search Brands"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_color_view_search
+msgid "Search Colors"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_model_view_search
+msgid "Search Models"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_search
+msgid "Search Vehicles"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:res.groups,comment:custom_fleet_vehicle.group_custom_fleet_user
+msgid ""
+"Sees and edits only the vehicles assigned to himself; can register new ones "
+"for himself. Cannot delete or reassign them."
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:res.groups,comment:custom_fleet_vehicle.group_custom_fleet_manager
+msgid "Sees and manages all the vehicles."
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#. odoo-python
+#: code:addons/custom_fleet_vehicle/models/custom_fleet_vehicle.py:0
+msgid ""
+"The license plate %(plate)s is not valid: use 2 to 12 letters, digits or "
+"dashes."
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#. odoo-python
+#: code:addons/custom_fleet_vehicle/models/custom_fleet_vehicle.py:0
+msgid "The model %(model)s is not a %(brand)s model."
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.constraint,message:custom_fleet_vehicle.constraint_custom_fleet_vehicle_model_brand_name_unique
+msgid "This brand already has a model with this name."
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_search
+msgid "Unassigned"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__user_id
+msgid "User"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__user_id
+msgid "User of the assigned employee: decides who can see the vehicle."
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_form
+msgid "Vehicle"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model,name:custom_fleet_vehicle.model_custom_fleet_vehicle_brand
+msgid "Vehicle Brand"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model,name:custom_fleet_vehicle.model_custom_fleet_vehicle_color
+msgid "Vehicle Color"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_hr_employee__custom_vehicle_count
+msgid "Vehicle Count"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model,name:custom_fleet_vehicle.model_custom_fleet_vehicle_model
+msgid "Vehicle Model"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.actions.act_window,name:custom_fleet_vehicle.action_custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_activity
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_form
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_graph
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_list
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_pivot
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.hr_employee_view_form_custom_fleet
+msgid "Vehicles"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,field_description:custom_fleet_vehicle.field_custom_fleet_vehicle__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model:ir.model.fields,help:custom_fleet_vehicle.field_custom_fleet_vehicle__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_brand_view_form
+msgid "e.g. Fiat"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_view_form
+msgid "e.g. GA123BB"
+msgstr ""
+
+#. module: custom_fleet_vehicle
+#: model_terms:ir.ui.view,arch_db:custom_fleet_vehicle.custom_fleet_vehicle_model_view_form
+msgid "e.g. Panda"
+msgstr ""
